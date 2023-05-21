@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #234058;
+    --secondary-color: #cad0d2;
+    --accent-color: #eec25f;
+    --accent-red-color: #f94f6d;
+    --light-color: #dcd8d0;
+    --light-white-color: #eee;
+    --dark-color: #080001;    
+}
+
+@font-face {
+    font-family: digitalFont;
+    src: url(CursedTimerUlil-Aznm.ttf);
+}
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.txt-cap { text-transform: uppercase; }
+.digital { font-family: digitalFont; }
+.btn { 
+    background: var(--accent-red-color);
+    color: var(--light-white-color);
+    border-radius: 50px;
+    padding: 5px;
+    margin-left: 30px;
+}
+button:hover { cursor: pointer; }
+
+.container {
+    display: flex;
+    background: var(--primary-color);
+    color: var(--light-color);
+    width: 37rem;
+    height: 24rem;
+    margin: 10px auto;
+    text-align: center;
+    border-radius: 5px;
+    border: red 1px solid;
+    position: relative;
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.left-side {
+    display: flex;
+    flex-direction: column;
+    margin-right: 80px;
+}
+
+.box-lg {
+    background: var(--dark-color);
+    width: 9.5rem;
+    height: 7.5rem;
+    margin: 15px auto;
+}
+
+.box-inner {
+    height: 7.5rem;
+    color: var(--accent-color);
+    font-size: 6rem;
+    padding-top: 16px;   
+}
+
+.box-sm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+    background: var(--primary-color);
+}
+
+.points { 
+    margin: 0 auto;
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+    border-radius: 5px;
+    height: 45px;
+    width: 45px;
+}
+
+.timeout1 {
+    position: absolute;    
+    top: 21rem;
+    left: 26rem;
+    color: var(--light-color);
+    text-align: center;
+    padding: 5px;
+    line-height: 1.4;    
+}
+
+.timeout2 {
+    position: absolute;    
+    top: 21rem;
+    left: 40rem;
+    color: var(--light-color);
+    text-align: center;
+    padding: 5px;
+    line-height: 1.4;    
+}
+input[type="checkbox"]:checked { 
+    background: var(--accent-color);
+}
