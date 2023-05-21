@@ -14,7 +14,7 @@
             <div class="left-side">
                 <div><h1 class="txt-cap">HOME</h1></div>          
                 <div class="box-lg">
-                <div class="box-inner"><p class="digital" id="homepoints-el">0</p></div>
+                  <div class="box-inner"><p class="digital" id="homepoints-el">0</p></div>
                 </div>
 
                 <div class="box-sm">
@@ -27,37 +27,34 @@
             <div class="right-side">
                 <div><h1 class="txt-cap">guest</h1></div>          
                 <div class="box-lg">
-                <div class="box-inner"><p class="digital" id="guestpoints-el">0</p></div>
+                  <div class="box-inner"><p class="digital" id="guestpoints-el">0</p></div>
                 </div>
 
                 <div class="box-sm">
                     <button class="points box1" onclick="add1PointGuest()">+1</button>
                     <button class="points box2" onclick="add2PointsGuest()">+2</button>
                     <button class="points box2" onclick="add3PointsGuest()">+3</button>
-                  </div>
                 </div>
-                <div><button class="btn" onclick="reset()">New Game</button></div>
-                
+            </div>           
+        </div>
+
+        <div class="bottom">
+            <div class="timeout1">
+                <p>Time Out</p>
+                <input type="checkbox">
+                <input type="checkbox">
+                <input type="checkbox">
             </div>
-            
-        </div>
-
-        <div class="timeout1">
-            <p>Time Out</p>
-            <input type="checkbox">
-            <input type="checkbox">
-            <input type="checkbox">
-        </div>
          
-        <div class="timeout2">
-            <p>Time Out</p>
-            <input type="checkbox">
-            <input type="checkbox">
-            <input type="checkbox">
+            <div class="timeout2">
+                <p>Time Out</p>
+                <input type="checkbox">
+                <input type="checkbox">
+                <input type="checkbox">
+            </div>
         </div>
-
-        
-        
+        <div><button class="btn" onclick="reset()">New Game</button></div>       
+        </div>
     </div>
     <script src="/js/main.js"></script>
 </body>
