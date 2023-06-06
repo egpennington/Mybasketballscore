@@ -5,13 +5,19 @@
 }
 
 :root {
-    --primary-color: #234058;
-    --secondary-color: #cad0d2;
-    --accent-color: #eec25f;
+    --main-primary-color: #1B244A;
+    --main-gray-color: #9AABD8;
     --accent-red-color: #f94f6d;
+    --dark-color: #080001;
+    --mich-primary-color: #234058;
+    --secondary-color: #cad0d2;
+    --mich-accent-color: #eec25f;    
     --light-color: #dcd8d0;
-    --light-white-color: #eee;
-    --dark-color: #080001;    
+    --light-white-color: #eee;    
+    --ohio-primary-color: #bb0000;
+    --ohio-accent-color: #666666;
+    --texas-primary-color: #ac4e00;
+    --texas-accent-color: #fff;
 }
 
 @font-face {
@@ -23,6 +29,8 @@ body {
 }
 
 .txt-cap { text-transform: uppercase; }
+.txt-small { font-size: 0.9rem; }
+.txt-center { text-align: center; }
 .digital { font-family: digitalFont; }
 .btn { 
     background: var(--accent-red-color);
@@ -37,8 +45,8 @@ button:hover { cursor: pointer; }
 .container {
     display: flex;
     flex-direction: column;
-    background: var(--primary-color);
-    color: var(--light-color);
+    background: var(--main-primary-color);
+    color: var(--light-white-color);
     height: 24rem;
     max-width: 36rem;
     margin: 10px auto;
@@ -50,7 +58,7 @@ button:hover { cursor: pointer; }
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin: 0 auto;
+    margin: 15px auto;
 }
 
 .left-side {
@@ -68,7 +76,7 @@ button:hover { cursor: pointer; }
 
 .box-inner {
     height: 7.5rem;
-    color: var(--accent-color);
+    color: var(--accent-red-color);
     font-size: 6rem;
     padding-top: 16px;   
 }
@@ -78,12 +86,12 @@ button:hover { cursor: pointer; }
     justify-content: center;
     align-items: center;
     padding: 2px;
-    background: var(--primary-color);
+    background: var(--main-primary-color);
 }
 
 .points { 
     margin: 0 auto;
-    background: var(--primary-color);
+    background: var(--main-primary-color);
     color: var(--secondary-color);
     border: 1px solid var(--secondary-color);
     border-radius: 5px;
@@ -107,4 +115,24 @@ button:hover { cursor: pointer; }
     color: var(--light-color);    
     padding: 5px;
     line-height: 1.4;    
+}
+
+.choice {
+    margin-right: 10px;
+    border-radius: 50px;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50px;
+}
+
+.changeEl {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 10px auto;
 }
