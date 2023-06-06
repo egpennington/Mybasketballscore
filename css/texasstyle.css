@@ -134,3 +134,8 @@ button:hover { cursor: pointer; }
     text-align: center;
     margin-top: 10px auto;
 }
+
+.home {
+    background: #fff;
+    padding: 5px;
+}
