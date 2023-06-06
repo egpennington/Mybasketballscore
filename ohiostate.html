@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="scrimba, challenge, html, javascript, css, scoreboard, per harlod borgen, 100 days of code">
+    <link rel="stylesheet" href="css/ohiostyle.css">
+    <title>Ohio State University Scoreboard | Basketball</title>
+</head>
+<body>
+    <div class="container">
+        <div class="main-content">
+            <div class="left-side">
+                <div><h1 class="txt-cap">OHIO STATE</h1></div>          
+                <div class="box-lg">
+                  <div class="box-inner"><p class="digital" id="homepoints-el">0</p></div>
+                </div>
+
+                <div class="box-sm">
+                  <button class="points box1" onclick="add1Point()">+1</button>
+                  <button class="points box2" onclick="add2Points()">+2</button>
+                  <button class="points box2" onclick="add3Points()">+3</button>
+                </div>
+            </div>
+
+            <div class="right-side">
+                <div><h1 class="txt-cap">guest</h1></div>          
+                <div class="box-lg">
+                  <div class="box-inner"><p class="digital" id="guestpoints-el">0</p></div>
+                </div>
+
+                <div class="box-sm">
+                    <button class="points box1" onclick="add1PointGuest()">+1</button>
+                    <button class="points box2" onclick="add2PointsGuest()">+2</button>
+                    <button class="points box2" onclick="add3PointsGuest()">+3</button>
+                </div>
+            </div>           
+        </div>
+
+        <div class="bottom">
+            <div class="timeout1">
+                <p>Time Out</p>
+                <input type="checkbox">
+                <input type="checkbox">
+                <input type="checkbox">
+            </div>
+         
+            <div class="timeout2">
+                <p>Time Out</p>
+                <input type="checkbox">
+                <input type="checkbox">
+                <input type="checkbox">
+            </div>
+        </div>
+        <div><button class="btn" onclick="reset()">New Game</button></div>       
+        </div>
+        <p class="txt-center txt-small">Change scoreboard color!</p>
+        <div class="changeEl">
+            <button class="choice ohioState" onClick="ohioState-el"><img class="logo" src="https://ohiostatebuckeyes.com/wp-content/uploads/2020/10/new_logo.png" alt="the ohio state logo"></button>
+            <button class="choice michigan"><a href="michigan.html"><img class="logo" src="https://umich.edu/skins/um2013/media/images/umich-logo.png" alt="university of michigan logo"></a></button>
+            <button class="choice texas"><a href="texas.html"><img class="logo" src="https://dxbhsrqyrr690.cloudfront.net/sidearm.nextgen.sites/texassports_com/responsive_2021/images/svgs/nav_main.svg" alt="texas longhorns logo"></a></button>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
